@@ -20,7 +20,7 @@ int main(void)
 
     do{
         system("cls");
-        printf("Digite a opÁ„o desejada\n[1]Soma\n[2]SubtraÁ„o\n[3]MultiplicaÁ„o\n[4]Divis„o\n[5]Numero Primo\n[6]Somar apenas pares ou impares\n[7]Multiplos de N\n[0]Sair\n\t");
+        printf("Digite a op√ß√£o desejada\n[1]Soma\n[2]Subtra√ß√£o\n[3]Multiplica√ß√£o\n[4]Divis√£o\n[5]Numero Primo\n[6]Somar apenas pares ou impares\n[7]Multiplos de N\n[0]Sair\n\t");
         scanf(" %d", &op);
         system ("cls");
         switch(op)
@@ -59,9 +59,9 @@ int main(void)
             break;
         case 5:
             system("cls");
-            printf("Digite o numero para saber se È primo:");
+            printf("Digite o numero para saber se √© primo:");
             scanf(" %d", &n1);
-            printf("VocÍ digitou o numero %d\n", n1);
+            printf("Voc√™ digitou o numero %d\n", n1);
             primos(n1);
             break;
         case 6:
@@ -71,14 +71,14 @@ int main(void)
             switch(op2)
             {
             case 1:
-                printf("Digite atÈ qual numero deseja somar:");
+                printf("Digite at√© qual numero deseja somar:");
                 scanf(" %d", &n1);
-                printf("A soma de todos os pares de 0 atÈ %d È igual a %d\n", n1, soman(n1, op2));
+                printf("A soma de todos os pares de 0 at√© %d √© igual a %d\n", n1, soman(n1, op2));
                 break;
             case 2:
-                printf("Digite atÈ qual numero deseja somar:");
+                printf("Digite at√© qual numero deseja somar:");
                 scanf(" %d", &n1);
-                printf("A soma de todos os impares de 0 atÈ %d È igual a %d\n", n1, soman(n1, op2));
+                printf("A soma de todos os impares de 0 at√© %d √© igual a %d\n", n1, soman(n1, op2));
                 break;
             }
             break;
@@ -86,17 +86,17 @@ int main(void)
             system ("cls");
             printf("Deseja ver multiplo de qual numero:");
             scanf(" %d", &n1);
-            printf("AtÈ qual numero:");
+            printf("At√© qual numero:");
             scanf(" %d", &n2);
-            printf("Esse s„o multiplos de %d, do 0 atÈ %d\n", n1, n2);
+            printf("Esse s√£o multiplos de %d, do 0 at√© %d\n", n1, n2);
             printf("%d\n", multiplos(n1, n2));
             break;
         default :
-            printf("OperaÁ„o invalida");
+            printf("Opera√ß√£o invalida");
             getchar();
             main();
         }
-        printf("-----------------------------------\nOutra operaÁ„o digite [1]\nPara sair digite [0]");
+        printf("-----------------------------------\nOutra opera√ß√£o digite [1]\nPara sair digite [0]");
         scanf(" %c", &op);
     }while(op!=0);
     return 0;
@@ -127,9 +127,9 @@ primos(n1)
         p++;
     }
     if(p = 2)
-    printf("Ele È primo\n");
+    printf("Ele √© primo\n");
     else
-    printf("Ele n„o È primo\n");
+    printf("Ele n√£o √© primo\n");
 }
 
 int soman(n1, op2)
